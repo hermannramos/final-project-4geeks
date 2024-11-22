@@ -1,0 +1,215 @@
+#container {
+    margin-top: 150px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.login-left {
+    width: 250px;
+    background-image: url("https://res.cloudinary.com/dbrzmir9f/image/upload/v1730068547/s2spqzfxnsfgeynubdhp.jpg");
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.login-left img {
+    height: 80px;
+    margin: 5px 0px;
+}
+
+.login-right {
+    padding: 60px 40px 60px 40px;
+    background: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.login-right h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.85;
+    margin-bottom: 20px;
+}
+
+.login-right p {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #000;
+    opacity: 0.65;
+    margin-bottom: 40px;
+}
+
+/* Input y label flotante */
+.floating-label {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.floating-label input {
+    padding: 10px 0 10px 30px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    color: #000;
+    background: transparent;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.floating-label input:focus {
+    border-bottom: 1px solid #00A5CF;
+    outline: none;
+    box-shadow: 0 2px 6px -2px rgba(0, 255, 255, 0.5);
+}
+
+
+.floating-label input:focus + label,
+.floating-label input:not(:placeholder-shown) + label {
+    top: -10px;
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+.floating-label .icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.15);
+    font-size: 1.1rem;
+}
+
+.login-container .button-modern {
+    background-image: linear-gradient(144deg, #00A5CF, #161616);
+    border: none;
+    padding: 10px 40px;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.login-container .button-modern:hover {
+    transform: translateY(-3px);
+}
+
+body.dark-mode .login-container {
+    background: #121212;
+    box-shadow: 0px 2px 6px -1px rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+body.dark-mode .login-left {
+    background-image: url("https://res.cloudinary.com/dbrzmir9f/image/upload/v1730068547/s2spqzfxnsfgeynubdhp.jpg");
+}
+
+body.dark-mode .login-right {
+    background: #1f1f1f;
+}
+
+body.dark-mode .login-right h4,
+body.dark-mode .login-right p {
+    color: #fff;
+    opacity: 0.85;
+}
+
+body.dark-mode .floating-label input {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+}
+
+body.dark-mode .floating-label input:focus {
+    border-bottom: 1px solid #00A5CF;
+    box-shadow: 0 2px 6px -2px rgba(0, 255, 255, 0.5);
+}
+
+body.dark-mode .login-container .button-modern {
+    background-image: linear-gradient(144deg, #00A5CF, #00A5CF);
+    color: white;
+}
+
+body.dark-mode .floating-label .icon {
+    color: white;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .login-left {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .login-right {
+        padding: 30px 20px; 
+        border-radius: 0 0 15px 15px;
+    }
+
+    .login-right h4 {
+        font-size: 18px;
+    }
+
+    .login-right p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .floating-label input {
+        font-size: 0.9rem;
+    }
+
+    .login-container .button-modern {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-left {
+        height: 120px;
+    }
+
+    .login-right h4 {
+        font-size: 16px;
+    }
+
+    .login-right p {
+        font-size: 11px;
+    }
+
+    .floating-label input {
+        font-size: 0.8rem;
+    }
+
+    .login-container .button-modern {
+        padding: 6px 15px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+.container-alert {
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    max-width: 300px;
+    border-radius: 5px;
+    padding: 1rem;
+    display: none;
+    z-index: 999;
+}
+
+.container-alert.show {
+    display: inline-flex;
+    pointer-events: auto;
+}
+

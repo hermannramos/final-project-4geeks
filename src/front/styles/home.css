@@ -1,0 +1,203 @@
+/*---FONTS---*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=DM+Sans:wght@400;500&family=Barlow:wght@500&family=Nunito+Sans:wght@400;600&family=Manrope:wght@500&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p, span {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+button, li {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+/*Dark-mode */
+body.dark-mode {
+  background-color: #161616;
+  color: white;
+}
+
+/* Navbar */
+/* Links del navbar */
+body.dark-mode .navbar .nav-link {
+  color: var(--primary-color);
+}
+
+body.dark-mode .navbar .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Botones */
+body.dark-mode .btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #003fb39d;
+  color: #ffffff;
+}
+
+/* Dropdown */
+body.dark-mode .dropdown-menu {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark-mode .dropdown-item {
+  color: #ffffff;
+}
+
+body.dark-mode .dropdown-item:hover {
+  background-color: #444;
+  color: #ffffff;
+}
+
+/* Formularios */
+body.dark-mode .form-control {
+  background-color: #161616;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbbbbb;
+}
+
+body.dark-mode .form-control:focus {
+  background-color: #161616;
+  border-color: var(--primary-color);
+}
+
+/* Tarjetas */
+body.dark-mode .card {
+  background-color: #161616;
+  color: white;
+  border: none;
+}
+
+body.dark-mode .carousel {
+  background-color: #161616;
+  color: white;
+  border: none;
+}
+
+body.dark-mode .corporation {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+/* Carousel */
+body.dark-mode .carousel-item {
+  background-color: #161616;
+  color: white;
+}
+
+body.dark-mode .carousel-caption h5,
+body.dark-mode .carousel-caption p {
+  color: white;
+}
+
+/* Botones */
+body.dark-mode .btn-info {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+body.dark-mode .btn-info:hover {
+  background-color: var(--primary-color);
+}
+
+/* Secciones de texto */
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h6 {
+  color: var(--primary-color);
+}
+
+body.dark-mode p, 
+body.dark-mode .lead {
+  color: white;
+}
+
+/* Accordion */
+body.dark-mode .accordion-button {
+  background-color: #161616;
+  color: #e0e0e0;
+  border: 1px solid #161616;
+}
+
+body.dark-mode .accordion-item {
+  background-color: #161616;
+  border: none;
+}
+
+/* Imágenes redondeadas */
+body.dark-mode .img-fluid, 
+body.dark-mode .rounded {
+  filter: brightness(0.8);
+}
+
+/* Testimoniales */
+body.dark-mode .testimonials-section {
+  background-color: #161616;
+}
+
+body.dark-mode .testimonials-section h2, 
+body.dark-mode .testimonials-section h5, 
+body.dark-mode .testimonials-section p {
+  color: white;
+}
+
+/* Corporation */
+body.dark-mode #Corporation {
+  background-color: #161616;
+  color: white;
+}
+
+/* Titulos */
+body.dark-mode #Corporation h1 {
+  color: var(--primary-color);
+}
+
+body.dark-mode #Corporation p {
+  color: white;
+}
+
+/* Botón dark-mode */
+body.dark-mode .accordion-button {
+  background-color: rgba(0, 200, 255);
+  color: white;
+}
+
+body.dark-mode .accordion-button:hover {
+  background-color: rgba(0, 150, 255);
+}
+
+footer.dark-mode {
+  background-color: #161616;
+  color: white;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+:root {
+  --primary-color: #00A5CF;
+  --secondary-color: #00B2B3;
+}
